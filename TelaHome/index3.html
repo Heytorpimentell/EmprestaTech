@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Emprestech - O melhor sistema de empréstimos e trocas de ferramentas, organizado e fácil de usar."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trocatech|Melhor sistema de trocha</title>
+    <link rel="stylesheet" href="../TelaHome/style3.css" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo"><a href="#">Emprestech</a></div>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Sobre</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <ul class="dropdown-menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+    </header>
+
+    <div class="container">
+      <img
+        class="background-box"
+        alt="Ilustração de uma pessoa tendo uma ideia"
+        src="../assets/img/principal.svg"
+      />
+      <section class="form-section">
+        <form action="">
+          <fieldset>
+            <legend>Registro de Empréstimo</legend>
+            <div class="input-box">
+              <input type="text" id="tipoferramenta" required />
+              <label for="tipoferramenta">Tipo de ferramenta</label>
+            </div>
+
+            <div class="input-box">
+              <input type="text" id="nomeferramenta" required />
+              <label for="nomeferramenta">Nome da ferramenta</label>
+            </div>
+
+            <div class="date-box">
+              <label for="dataaquisicao">Data de aquisição:</label>
+              <input type="date" id="dataaquisicao" required />
+            </div>
+
+            <div class="date-box">
+              <label for="datadevolucao">Data de devolução:</label>
+              <input type="date" id="datadevolucao" required />
+            </div>
+
+            <div class="input-box">
+              <input type="text" id="cidade" required />
+              <label for="cidade">Cidade</label>
+            </div>
+
+            <div class="input-box">
+              <input type="text" id="estado" required />
+              <label for="estado">Estado</label>
+            </div>
+
+            <div class="input-box">
+              <input type="text" id="endereco" required />
+              <label for="endereco">Endereço</label>
+            </div>
+
+            <div class="input-box">
+              <input type="text" id="nomecompleto" required />
+              <label for="nomecompleto">Nome completo</label>
+            </div>
+
+            <div class="input-box">
+              <input type="tel" id="telefone" required />
+              <label for="telefone">Telefone</label>
+            </div>
+
+            <button type="submit">Registrar</button>
+          </fieldset>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>

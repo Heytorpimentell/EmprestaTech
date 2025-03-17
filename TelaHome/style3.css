@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background: #0c0ce94d;
+}
+
+header {
+  padding: 0 2rem;
+  position: relative;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.nav-links li a:hover {
+  color: mediumslateblue;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  list-style: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: white;
+  width: 150px;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.dropdown-menu.open {
+  display: block;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+  padding: 60px;
+}
+
+/* Caixa cinza substituindo a imagem */
+.background-box {
+  width: 30rem;
+  height: 30rem;
+  flex-shrink: 0;
+}
+
+/* FormulÃ¡rio */
+.form-section {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  height: 40rem;
+}
+
+fieldset {
+  border: none;
+  height: 38rem;
+}
+
+legend {
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+.date-box {
+  padding-bottom: 17px;
+}
+
+.input-box {
+  position: relative;
+  margin-bottom: 20px;
+  color: #000;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.input-box input {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #0000001f;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  width: 100%;
+}
+
+.input-box label {
+  position: absolute;
+  left: 16px;
+  transition: 0.5s;
+  color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -7px; /* Sobe o label */
+  font-size: 12px; /* Diminui o tamanho */
+  color: mediumslateblue; /* Muda a cor ao focar/preencher */
+  font-weight: bold;
+}
+
+button {
+  width: 100%;
+  background: #6c63ff;
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem; /* Reduz ainda mais o espaço entre os elementos */
+    padding: 10px; /* Diminui o padding para economizar espaço */
+    width: 100vw; /* Garante que ocupe toda a largura da tela */
+    overflow-x: hidden; /* Evita qualquer rolagem horizontal */
+  }
+
+  .background-box {
+    width: 100%; /* Garante que ocupe toda a largura */
+    max-width: 280px; /* Limita o tamanho máximo */
+    height: 180px; /* Reduz a altura para melhorar o encaixe */
+  }
+
+  .form-section {
+    width: 100%; /* Aproveita toda a largura disponível */
+    max-width: 300px; /* Limita o tamanho máximo */
+    padding: 10px; /* Diminui o padding interno */
+  }
+
+  /* Ajusta o botão para caber melhor */
+  button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
