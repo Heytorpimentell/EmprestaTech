@@ -12,7 +12,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: url("../assets/img/login.svg");
+  background: url("/img/login.svg");
   background-size: 30%;
   background-position: 190px;
   background-repeat: no-repeat;
